@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gundam Landing Page</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header id="header">
+      <a href="#">
+        <img src="./assets/images/brand.png" alt="Logo" height="42" id="header-img" />
+      </a>
+      <nav id="nav-bar">
+        <ul class="list">
+          <li><a href="#video" class="nav-link">Video</a></li>
+          <li><a href="#form" class="nav-link">Subscribe</a></li>
+          <li><a href="#card" class="nav-link">Price</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/-3-EXtjXo3U"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        id="video"
+      ></iframe>
+      <form action="https://www.freecodecamp.com/email-submit" id="form">
+        <h2 id="title">Subscribe to get the latest info</h2>
+        <input type="email" id="email" name="email" placeholder="Enter your email address" /><br />
+        <button type="submit" id="submit">Subscribe</button>
+      </form>
+      <div class="container">
+        <h2>Pricelist</h2>
+        <div class="container-card">
+          <div id="card">
+            <header class="header-card">
+              <h3>Standart edition</h3>
+            </header>
+            <h2>$10</h2>
+            <p>You will get:</p>
+            <p>Armor set</p>
+            <p>Weapon set</p>
+            <button type="submit">SELECT</button>
+          </div>
+          <div id="card">
+            <header class="header-card">
+              <h3>Ultimate edition</h3>
+            </header>
+            <h2>$1000</h2>
+            <p>You will get:</p>
+            <p>Armor ultimate set</p>
+            <p>Weapon ultimate set</p>
+            <button type="submit">SELECT</button>
+          </div>
+          <div id="card">
+            <header class="header-card">
+              <h3>Deluxe edition</h3>
+            </header>
+            <h2>$100</h2>
+            <p>You will get:</p>
+            <p>Armor deluxe set</p>
+            <p>Weapon deluxe set</p>
+            <button type="submit">SELECT</button>
+          </div>
+        </div>
+      </div>
+
+      <footer id="footer">
+        <h5>Copyright 2022, Gundam</h5>
+      </footer>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>

@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --light-color: #3d3d3d;
+  --light-color-alt: rgba(0, 0, 0, 0.6);
+  --primary-background-color: #fff;
+  --secondary-background-color: #f1f1f1;
+  --font-family: 'Poppins', sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--light-color-alt);
+  background-color: var(--primary-background-color);
+  letter-spacing: 1px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+#header {
+  background-color: var(--secondary-background-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 70px;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  margin-left: 40px;
+}
+
+#header-img {
+  margin: 10px 0;
+  display: block;
+}
+
+#video {
+  margin: 94px auto 0 auto;
+  display: block;
+}
+
+form {
+  text-align: center;
+  margin-top: 32px;
+}
+
+form {
+  margin-top: 32px;
+}
+
+#title {
+  margin-bottom: 12px;
+}
+
+input[type='email'] {
+  height: 32px;
+  padding: 10px;
+  width: 300px;
+  font: inherit;
+}
+
+button {
+  border: none;
+  height: 35px;
+  width: 80px;
+  margin-top: 12px;
+  cursor: pointer;
+}
+
+.container {
+  margin-top: 32px;
+  text-align: center;
+}
+
+#card {
+  width: 300px;
+  height: 310px;
+  margin: 16px auto 0 auto;
+  border: 1px solid var(--light-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+h3 {
+  background-color: var(--secondary-background-color);
+  display: block;
+  padding: 10px;
+}
+
+.container-card {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer {
+  margin: 32px auto 0 auto;
+  max-width: 1000px;
+  height: 40px;
+  text-align: center;
+  background-color: var(--secondary-background-color);
+}
+
+footer h5 {
+  line-height: 40px;
+}
+
+@media screen and (max-width: 650px) {
+  ul {
+    display: block;
+  }
+  #video {
+    margin-top: 107px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #header {
+    flex-direction: column;
+  }
+  ul {
+    display: block;
+    text-align: center;
+  }
+  li {
+    margin-left: 0;
+  }
+
+  #video {
+    max-width: 100%;
+    margin-top: 169px;
+  }
+}
